@@ -1,0 +1,41 @@
+C:\Users\Данил\Desktop\Файлы\kt3_test\IThub-24.3\КТ\КТ3\project>python -m unittest discover -s tests -v
+test_issue_one_microphone (test_start.StartTests.test_issue_one_microphone) ... ok
+test_invalid_quantity_does_not_change_state (test_student.StudentTests.test_invalid_quantity_does_not_change_state) ... ok
+test_issue_light_when_stock_is_zero (test_student.StudentTests.test_issue_light_when_stock_is_zero) ... ok
+test_issue_more_than_available (test_student.StudentTests.test_issue_more_than_available) ... FAIL
+test_issue_three_microphones (test_student.StudentTests.test_issue_three_microphones) ... FAIL
+test_repeat_return_does_not_change_state (test_student.StudentTests.test_repeat_return_does_not_change_state) ... FAIL
+test_return_loan_restores_stock (test_student.StudentTests.test_return_loan_restores_stock) ... ok
+test_return_unknown_id_does_not_change_state (test_student.StudentTests.test_return_unknown_id_does_not_change_state) ... ok
+
+======================================================================
+FAIL: test_issue_more_than_available (test_student.StudentTests.test_issue_more_than_available)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Данил\Desktop\Файлы\kt3_test\IThub-24.3\КТ\КТ3\project\tests\test_student.py", line 51, in test_issue_more_than_available
+    self.assertFalse(result["ok"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_issue_three_microphones (test_student.StudentTests.test_issue_three_microphones)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Данил\Desktop\Файлы\kt3_test\IThub-24.3\КТ\КТ3\project\tests\test_student.py", line 17, in test_issue_three_microphones
+    self.assertTrue(result["ok"])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_repeat_return_does_not_change_state (test_student.StudentTests.test_repeat_return_does_not_change_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Данил\Desktop\Файлы\kt3_test\IThub-24.3\КТ\КТ3\project\tests\test_student.py", line 96, in test_repeat_return_does_not_change_state
+    self.assertFalse(second_return["ok"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+FAILED (failures=3)

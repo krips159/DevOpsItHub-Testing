@@ -1,0 +1,14 @@
+C:\Users\Данил\Desktop\Файлы\kt3_test\IThub-24.3\КТ\КТ3\project>python -m unittest discover -s tests -v
+test_issue_one_microphone (test_start.StartTests.test_issue_one_microphone) ... ok
+test_invalid_quantity_does_not_change_state (test_student.StudentTests.test_invalid_quantity_does_not_change_state) ... ok
+test_issue_light_when_stock_is_zero (test_student.StudentTests.test_issue_light_when_stock_is_zero) ... ok
+test_issue_more_than_available (test_student.StudentTests.test_issue_more_than_available) ... ok
+test_issue_three_microphones (test_student.StudentTests.test_issue_three_microphones) ... ok
+test_repeat_return_does_not_change_state (test_student.StudentTests.test_repeat_return_does_not_change_state) ... ok
+test_return_loan_restores_stock (test_student.StudentTests.test_return_loan_restores_stock) ... ok
+test_return_unknown_id_does_not_change_state (test_student.StudentTests.test_return_unknown_id_does_not_change_state) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
